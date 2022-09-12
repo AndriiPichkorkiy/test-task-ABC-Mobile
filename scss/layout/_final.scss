@@ -1,0 +1,44 @@
+.final {
+  padding: 0 7px 0 16px;
+  &__title {
+    margin-top: 34px;
+    font-weight: 500;
+    // font-size: 14px;
+    line-height: 136%;
+
+    color: #343b4d;
+  }
+
+  &__title-accent {
+    margin-top: 19px;
+    font-weight: 500;
+    // font-size: 14px;
+    line-height: 150%;
+
+    color: #315dfa;
+  }
+
+  &__message {
+    margin-top: 19px;
+    color: #343b4d;
+
+    font-weight: 400;
+    // font-size: 14px;
+    line-height: 150%;
+
+    & > h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 106%;
+    }
+  }
+
+  &__btn.btn {
+    margin-top: 19px;
+    width: 100%;
+
+    background-image: url(../../imgs/icons-general/icon_call.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 9px;
+  }
+}

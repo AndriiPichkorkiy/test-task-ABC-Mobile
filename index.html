@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <!-- makrups -->
+    <script src="./js/makrups/zodiac.js"></script>
+    <script src="./js/makrups/date.js"></script>
+    <script src="./js/makrups/input.js"></script>
+    <script src="./js/makrups/analisys.js"></script>
+    <script src="./js/makrups/final.js"></script>
+    <script src="./js/makrups/table.js"></script>
+    <!-- general -->
+    <script src="./js/responsePage.js"></script>
+    <script src="./js/finalPage.js"></script>
+    <script src="./js/dataProcessing.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/date.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <section>
+          <h1>Новый гороскоп на 2021 год!</h1>
+          <span>Узнайте, что Вас ждёт.</span>
+        </section>
+      </header>
+      <main>
+        <!-- introduction -->
+        <section class="intro__section">
+          <div class="poster"></div>
+<img src="" alt="">
+          <div class="intro">
+            <h2 class="intro__title">
+              Узнайте, как 2021 год изменит жизнь каждого из нас!
+            </h2>
+            <p class="intro__desc">
+              К сожалению, 2020 год принес нам немало неприятностей, даже
+              откровенных проблем и несчастий. Не смотря на это, 3 знака зодиака
+              очень скоро обретут долгожданное счастье! 2021 год затронет своими
+              потрясениями каждого из нас.
+            </p>
+          </div>
+        </section>
+        <!-- app -->
+        <section class="app" id="app">
+          <!-- progress-bar for app -->
+          <div class="progress-bar hide">
+            <div class="progress-line"></div>
+          </div>
+
+          <!-- form for app -->
+          <form class="form">
+            <p class="form__title">Укажите свой пол:</p>
+            <div class="form__input-bar form__first-question"></div>
+
+            <button class="form__submit btn hide" type="submit">Далее</button>
+          </form>
+        </section>
+      </main>
+      <footer>2020 © HOROSCOP PERSONAL</footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

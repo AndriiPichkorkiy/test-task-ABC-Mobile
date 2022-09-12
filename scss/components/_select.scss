@@ -1,0 +1,25 @@
+select {
+  width: 186px;
+  height: 45px;
+
+  font-weight: 700;
+  // font-size: 14px;
+  line-height: 157%;
+  color: var(--header-color);
+
+  padding: 14px 17px;
+  margin-top: 15px;
+
+  background: var(--question-text);
+  border: 1px solid var(--select-border-color);
+}
+
+.input-date-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > label {
+    display: none;
+  }
+}

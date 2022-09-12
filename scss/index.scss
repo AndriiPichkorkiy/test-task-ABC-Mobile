@@ -1,0 +1,19 @@
+@import "./base/reset";
+
+@import "./utils/vars";
+@import "./utils/mixins";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./layout/dataProcessing";
+@import "./layout/final";
+
+@import "./components/_btn";
+@import "./components/_section";
+@import "./components/_app";
+@import "./components/_select";
+@import "./components/_zodiac";
+@import "./components/_table";
+
+@import "./base/base";

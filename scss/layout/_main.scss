@@ -1,0 +1,56 @@
+main {
+  flex: 1 1 auto;
+  max-width: 623px;
+  margin: 0 auto;
+}
+
+.poster {
+  margin-top: 11px;
+  background-image: url(../imgs/thumb_l_26123\ 1.png),
+    url(../imgs/thumb_l_26128\ 2.png);
+
+  background-repeat: no-repeat;
+  background-size: contain, 100% 100%;
+  max-width: 623px;
+  min-height: 158px;
+  height: 49.375vw;
+  max-height: 344px;
+}
+
+.intro {
+  margin-top: 10px;
+
+  @include tablet {
+    margin-top: 32px;
+  }
+
+  &__section {
+    padding: 0 7px 0 16px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 129%;
+
+    color: var(--accent-color-1);
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__desc {
+    margin-top: 9px;
+
+    font-weight: 400;
+    // font-size: 14px;
+    line-height: 136%;
+
+    color: var(--accent-color-2);
+
+    @include tablet {
+    margin-top: 21px;
+  }
+  }
+}

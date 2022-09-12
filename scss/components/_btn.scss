@@ -1,0 +1,19 @@
+.btn {
+    margin: 13px auto;
+    display: block;
+    background-color: var(--header-color);
+    border: 1px solid var(--header-color);
+    width: 186px;
+    height: 45px;
+
+    font-weight: 700;
+    // font-size: 14px;
+    line-height: 157%;
+    color: var(--question-text);
+
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.35);
+    }
+  }

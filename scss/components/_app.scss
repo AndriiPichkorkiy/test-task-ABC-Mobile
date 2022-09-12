@@ -1,0 +1,83 @@
+.app {
+  margin-top: 9px;
+}
+
+.progress {
+  &-bar {
+    margin: 35px auto 25px auto;
+
+    width: 289px;
+    height: 8px;
+
+    background: var(--form-fon);
+    box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  &-line {
+    background-color: var(--progress-bar-color-1);
+    height: 100%;
+    width: 0%;
+    transition-duration: 250ms;
+    transition-property: all;
+  }
+}
+
+.form {
+  background-color: var(--form-fon);
+  padding-bottom: 15px;
+  margin-top: 1rem;
+  @include tablet {
+    margin-top: 47px;
+  }
+  &__title {
+    background-color: var(--question-fon);
+    color: var(--question-text);
+
+    padding: 21px 15px;
+
+    text-align-last: center;
+  }
+
+  &__input-bar {
+    padding: 0 17px;
+  }
+
+  &__first-question {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    min-height: 68px;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  // font-size: 14px;
+  line-height: 157%;
+
+  color: var(--form-text);
+
+  margin: 30px 0;
+  @include tablet {
+    align-items: flex-end;
+  }
+
+  & input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    @include tablet {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  & input[type="radio"]:checked + label {
+    color: var(--header-color);
+  }
+}

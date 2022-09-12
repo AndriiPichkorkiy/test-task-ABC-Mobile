@@ -1,0 +1,35 @@
+header {
+  height: 57px;
+  background-color: var(--header-color);
+  color: var(--title-color);
+  padding: 14px 0px 0px 21px;
+
+  & > section {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 623px;
+    & > h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 94%;
+
+      text-transform: uppercase;
+
+      @include tablet {
+    font-size: 21px;
+  }
+    }
+
+    & > p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 160%;
+
+      @include tablet {
+    font-size: 14px;
+  }
+    }
+  }
+}

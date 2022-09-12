@@ -1,0 +1,115 @@
+.progress {
+  &-title {
+    margin-top: 34px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 133%;
+
+    color: #343b4d;
+
+    @include tablet {
+    font-size: 14px;
+  }
+  }
+
+  &-bar-processing {
+    margin-top: 19px;
+    background-color: #f3f4f8;
+    height: 42px;
+  }
+
+  &-line-processing {
+    background-color: #419330;
+    height: 100%;
+    width: 0%;
+
+    padding-top: 12px;
+
+    font-weight: 700;
+    // font-size: 14px;
+    line-height: 157%;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    transition-duration: 250ms;
+    transition-property: all;
+  }
+
+  &-status {
+    margin-top: 26px;
+    &__left {
+      // float: left;
+      // clear: both;
+      color: var(--accent-color-2);
+
+      grid-area: left;
+    }
+
+    &__right {
+      // float: right;
+
+      color: var(--progress-bar-color-2);
+
+      grid-area: right;
+
+      &.redText {
+        font-weight: 700;
+        color: var(--red-text);
+      }
+    }
+
+    &__dottes {
+      grid-area: dottes;
+      // border-bottom: 1px dotted grey;
+      // margin-bottom: 2px;
+
+      background-image: linear-gradient(
+        to right,
+        var(--question-fon) 10%,
+        rgba(255, 255, 255, 0) 0%
+      );
+      background-position: bottom;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+    }
+
+    &__left,
+    &__right {
+      padding: 1px 0.5em;
+      background: #fff;
+
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 133%;
+
+      @include tablet {
+    font-size: 14px;
+  }
+    }
+
+    &__line {
+      margin: 1rem 0px;
+      display: grid;
+      grid-template-columns: minmax(min-content, auto) auto max-content;
+      grid-template-rows: max-content;
+      gap: 0px 0px;
+      grid-template-areas: "left dottes right";
+    }
+  }
+
+  &-ready {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 133%;
+
+    text-transform: uppercase;
+
+    color: var(--accent-color-2);
+    @include tablet {
+    font-size: 14px;
+  }
+  }
+}
